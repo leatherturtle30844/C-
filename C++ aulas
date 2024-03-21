@@ -22,7 +22,7 @@ n3 = n2 % 5 * 7;
 cout << n2 << " " << n3 << " " << (n2 != n3 + 21) << endl;
 }*/
 
-#include <iostream>
+/*#include <iostream>
 #include <iomanip> 
 using namespace std;
 int main() 
@@ -36,7 +36,8 @@ cout << "Soma = " << soma << endl;
 cout.setf (ios::fixed | ios::showpoint);
 cout.precision(2);
 
-cout << "Media = " << setw(8) << soma / 3.0 << endl;
+cout << "Media = " << setw(2) << soma / 3.0 << endl;
 cout << "Produto = " << (unsigned) n1 * n2 * n3 << endl;
 }
 
+*/
