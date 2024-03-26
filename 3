@@ -1,0 +1,1001 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib> 
+#include <string>
+using namespace std;
+
+// Função para pausar a execução por um período de tempo
+void pausar(int milissegundos) {
+    Sleep(milissegundos);
+}
+  
+
+void fim(){
+	system("cls");
+}
+//Função para o funcionamento do carregar
+void carregar(){
+	 cout << "C";
+    pausar(120);
+    cout << "A";
+    pausar(120);
+    cout << "R";
+    pausar(120);
+    cout << "R";
+    pausar(120);
+    cout << "E";
+    pausar(120);
+    cout << "G";
+    pausar(120);
+    cout << "A";
+    pausar(120);
+    cout << "N";
+    pausar(120);
+    cout << "D";
+    pausar(120);
+    cout << "O";
+    pausar(120);
+system("cls");
+    cout << "CARREGANDO";
+    pausar(120);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+system("cls");
+	cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls");
+cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls");  
+  	cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls"); 
+}
+
+int main() {
+	setlocale (LC_ALL,"portuguese");
+carregar();
+//Tutorial
+/*pausar(120);
+cout << "B";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << "m";
+pausar(120);
+cout << "-";
+pausar(120);
+cout << "v";
+pausar(120);
+cout << "i";
+pausar(120);
+cout << "n";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "a";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "j";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "g";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "C";
+pausar(120);
+cout << "a";
+pausar(120);
+cout << "r";
+pausar(120);
+cout << "n";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << "i";
+pausar(120);
+cout << "r";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "L";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "b";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "!";
+pausar(120);
+cout << "\n";
+pausar(120);
+
+    
+
+    
+
+      
+cout << "          V";
+pausar(200);
+cout << "   A";
+pausar(200);
+cout << "   M";
+pausar(200);
+cout << "   O";
+pausar(200);
+cout << "   S";
+pausar(200);
+cout << " ";
+pausar(200);
+cout << "   C";
+pausar(200);
+cout << "   O";
+pausar(200);
+cout << "   M";
+pausar(200);
+cout << "   E";
+pausar(200);
+cout << "   Ç";
+pausar(200);
+cout << "   A";
+pausar(200);
+cout << "   R";
+pausar(200);
+cout << "\n";
+pausar(200);
+
+    cout << "O ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "ê";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e"; int Fazendeiro = 0; // 0 lado em que se inciia, 1 lado em que o fazendeiro vai
+    int ovelha = 1, lobo = 2, alface = 3;
+pausar(70);
+cout << "m";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "é";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "ó";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << ".\n";
+pausar(70);
+
+cout << "\nO ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << ". ";
+pausar(70);
+cout << "V";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "ê";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "à";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "g";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << ": ";
+pausar(70);
+cout << "\n";
+
+
+cout << "\nO ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "\n";
+pausar(70);
+
+cout << "\nA ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "\n";
+pausar(70);
+
+cout << "\nE";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "j";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "g";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "E";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << ".";
+pausar(70);
+cout << "\"";
+pausar(70);
+cout << "\n";
+cout << "\n";
+cout << "\n";
+
+*/
+//JOGO
+    bool jogoFinalizado = false;
+    int ovelhaLadoEsquerdo = 1, loboLadoEsquerdo = 2, repolhoLadoEsquerdo = 3;
+    int ovelhaLadoDireito = 4, loboLadoDireito = 5, repolhoLadoDireito = 7;
+    int barco = 0;
+    int acao;
+    int escolha;
+
+    while (!jogoFinalizado) {
+        cout << "Você está no lado esquerdo do rio com uma ovelha, um lobo e um repolho.\n";
+
+        while (!jogoFinalizado) {
+            // Mostra o estado atual do jogo
+            cout << "\nLADO ESQUERDO:\n";
+            cout << "Ovelha: " << ovelhaLadoEsquerdo << endl;
+            cout << "Lobo: " << loboLadoEsquerdo << endl;
+            cout << "Repolho: " << repolhoLadoEsquerdo << endl << endl;
+
+            // Mostra o estado atual do barco
+            cout << "Barco:\n";
+            if (barco == 0) {
+                cout << "Vazio\n\n";
+            } else {
+                cout << "Item no barco: " << barco << endl << endl;
+            }
+
+            // Solicita ao jogador ação (escolher um item, voltar ou finalizar)
+            cout << "Digite 1 para pegar um item do lado esquerdo para o barco.\n";
+            cout << "Digite 2 para pegar um item do barco para o lado direito.\n";
+            cout << "Digite 3 para pegar um item do lado direito para o barco.\n";
+            cout << "Digite 4 para pegar um item do barco para o lado esquerdo.\n";
+            cout << "Ou digite 0 para finalizar o jogo: ";
+            cin >> acao;
+
+            // Verifica a ação do jogador
+            switch (acao) {
+                case 0:
+                    cout << "\nFim do jogo.\n";
+                    jogoFinalizado = true;
+                    break;
+                case 1:
+                    if (barco == 0) {
+                        cout << "Digite o número do item que deseja pegar do lado esquerdo (1, 2, ou 3): ";
+                        cin >> escolha;
+                        if (escolha >= 1 && escolha <= 3) {
+                            if ((loboLadoEsquerdo == escolha && repolhoLadoEsquerdo == escolha) ||
+                                (loboLadoEsquerdo == escolha && ovelhaLadoEsquerdo == escolha)) {
+                                cout << "Erro! A ovelha não pode ficar sozinha com o lobo ou o repolho.\n\n";
+                                jogoFinalizado = true;
+                            } else {
+                                if (escolha == ovelhaLadoEsquerdo) ovelhaLadoEsquerdo = 0;
+                                else if (escolha == loboLadoEsquerdo) loboLadoEsquerdo = 0;
+                                else if (escolha == repolhoLadoEsquerdo) repolhoLadoEsquerdo = 0;
+                                barco = escolha;
+                            }
+                        } else {
+                            cout << "Opção inválida.\n\n";
+                        }
+                    } else {
+                        cout << "Erro! O barco já está com um item.\n\n";
+                    }
+                    break;
+                case 2:
+                    if (barco != 0) {
+                        if (barco == ovelhaLadoEsquerdo) ovelhaLadoEsquerdo = barco;
+                        else if (barco == loboLadoEsquerdo) loboLadoEsquerdo = barco;
+                        else if (barco == repolhoLadoEsquerdo) repolhoLadoEsquerdo = barco;
+                        barco = 0;
+                    } else {
+                        cout << "Erro! O barco está vazio.\n\n";
+                    }
+                    break;
+                case 3:
+                    if (barco == 0) {
+                        cout << "Digite o número do item que deseja pegar do lado direito (4, 5, ou 7): ";
+                        cin >> escolha;
+                        if (escolha >= 4 && escolha <= 7) {
+                            if ((loboLadoDireito == escolha && repolhoLadoDireito == escolha) ||
+                                (loboLadoDireito == escolha && ovelhaLadoDireito == escolha)) {
+                                cout << "Erro! A ovelha não pode ficar sozinha com o lobo ou o repolho.\n\n";
+                                jogoFinalizado = true;
+                            } else {
+                                if (escolha == ovelhaLadoDireito) ovelhaLadoDireito = 0;
+                                else if (escolha == loboLadoDireito) loboLadoDireito = 0;
+                                else if (escolha == repolhoLadoDireito) repolhoLadoDireito = 0;
+                                barco = escolha;
+                            }
+                        } else {
+                            cout << "Opção inválida.\n\n";
+                        }
+                    } else {
+                        cout << "Erro! O barco já está com um item.\n\n";
+                    }
+                    break;
+                case 4:
+                    if (barco != 0) {
+                        if (barco == ovelhaLadoDireito) ovelhaLadoDireito = barco;
+                        else if (barco == loboLadoDireito) loboLadoDireito = barco;
+                        else if (barco == repolhoLadoDireito) repolhoLadoDireito = barco;
+                        barco = 0;
+                    } else {
+                        cout << "Erro! O barco está vazio.\n\n";
+                    }
+                    break;
+                default:
+                    cout << "Opção inválida.\n\n";
+            }
+  // Verifica se o lobo fica sozinho com a ovelha em qualquer lado do rio
+            if ((loboLadoEsquerdo == ovelhaLadoEsquerdo && repolhoLadoEsquerdo == ovelhaLadoEsquerdo) ||
+                (loboLadoDireito == ovelhaLadoDireito && repolhoLadoDireito == ovelhaLadoDireito)) {
+                cout << "Erro! A ovelha não pode ficar sozinha com o loboou o repolho.\n";
+                jogoFinalizado = true;
+                break;
+            }
+
+            // Verifica se a ovelha e o repolho ficam sozinhos em qualquer lado do rio
+            if ((ovelhaLadoEsquerdo == repolhoLadoEsquerdo && loboLadoEsquerdo != ovelhaLadoEsquerdo) ||
+                (ovelhaLadoDireito == repolhoLadoDireito && loboLadoDireito != ovelhaLadoDireito)) {
+                cout << "Erro! A ovelha e o repolho não podem ficar sozinhos juntos.\n";
+                jogoFinalizado = true;
+                break;
+            }
+
+            // Verifica se todos os itens estão do outro lado do rio
+            if (ovelhaLadoDireito == 0 && loboLadoDireito == 0 && repolhoLadoDireito == 0) {
+                cout << "Parabéns! Você finalizou o jogo com sucesso.\n";
+                jogoFinalizado = true;
+                break;
+            }
+
+            // Mostra o estado atual do barco
+            cout << "Barco:\n";
+            if (barco == 0) {
+                cout << "Vazio\n\n";
+            } else {
+                cout << "Item no barco: " << barco << endl << endl;
+            }
+
+            // Mostra o estado atual do lado direito do rio
+            cout << "Lado direito do rio:\n";
+            cout << "Ovelha: " << ovelhaLadoDireito << endl;
+            cout << "Lobo: " << loboLadoDireito << endl;
+            cout << "Repolho: " << repolhoLadoDireito << endl << endl;
+
+            // Verifica se o lobo fica sozinho com a ovelha em qualquer lado do rio
+            if ((loboLadoEsquerdo == ovelhaLadoEsquerdo && repolhoLadoEsquerdo == ovelhaLadoEsquerdo) ||
+                (loboLadoDireito == ovelhaLadoDireito && repolhoLadoDireito == ovelhaLadoDireito)) {
+                cout << "Erro! A ovelha não pode ficar sozinha com o lobo ou o repolho.\n\n";
+                // Move os itens de volta para o lado esquerdo
+                if (barco == ovelhaLadoDireito) ovelhaLadoDireito = barco;
+                else if (barco == loboLadoDireito) loboLadoDireito = barco;
+                else if (barco == repolhoLadoDireito) repolhoLadoDireito = barco;
+                barco = 0;
+            }
+        }
+    }
+
+    return 0;
+}
+
+
+
