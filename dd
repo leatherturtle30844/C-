@@ -1,0 +1,98 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// Define the states of the objects
+#define MAN_A 1
+#define MAN_B 2
+#define WOLF_A 3
+#define WOLF_B 4
+#define CABBAGE_A 5
+#define CABBAGE_B 6
+#define SHEEP_A 7
+#define SHEEP_B 8
+
+// Define the initial state of the game
+int initialState[] = {MAN_A, SHEEP_A, CABBAGE_A, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY};
+
+// Define the goal state of the game
+int goalState[] = {EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, MAN_B, SHEEP_B, CABBAGE_B};
+
+// Define the possible moves of the man
+int moves[4][4] = {{1, 0, 0, 0}, {-1, 0, 0, 0}, {0, 1, 0, 0}, {0, -1, 0, 0}};
+
+// Define the function to check if the current state is the goal state
+bool isGoalState(int* state)
+{
+    for (int i = 0; i < 10; i++)
+    {
+        if (state[i] != goalState[i])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Define the function to get all the neighboring states of the current state
+int **getNeighbors(int* state)
+{
+    // Create a vector to store the neighboring states
+    vector<int *> neighbors;
+
+    // Loop through all possible moves of the man
+    for (int i = 0; i < 4; i++)
+    {
+        // Create a copy of the current state
+        int *newState = new int[10];
+        for (int j = 0; j < 10; j++)
+        {
+            newState[j] = state[j];
+        }
+
+        // Get the new position of the man
+        int manNewPos = newState[0] + moves[i][0];
+        int manOldPos = newState[0];
+
+        // Check if the man is in the new position
+        if (manNewPos >= 1 && manNewPos <= 8)
+        {
+            // Check if the man can move to the new position
+            if (newState[manNewPos] == EMPTY)
+            {
+                // Move the man to the new position
+                newState[manNewPos] = manOldPos;
+                newState[0] = manNewPos;
+
+                // Check if the objects in the boat are safe to move
+                for (int j = 1; j < 5; j++)
+                {
+                    int objPos = newState[j];
+                    if (objPos != EMPTY && objPos != manNewPos && (objPos - manNewPos) * (objPos - manNewPos) <= 4)
+                    {
+                        delete[] newState;
+                        break;
+                    }
+                }
+
+                // Check if the objects in the old position are safe to move
+                for (int j = 5; j < 9; j++)
+                {
+                    int objPos = newState[j];
+                    if (objPos != EMPTY && objPos != manOldPos && (objPos - manOldPos) * (objPos - manOldPos) <= 4)
+                    {
+                        delete[] newState;
+                        break;
+                    }
+                }
+
+                // Add the new state to the vector
+                neighbors.push_back(newState);
+            }
+        }
+    }
+
+    // Convert the vector to a 2D array
+    int **arr = new int *[neighbors.size()];
+    for (int i = 0; i < neighbors.
