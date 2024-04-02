@@ -1,0 +1,1054 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib> 
+#include <string>
+
+using namespace std;
+
+// Função para pausar a execução por um período de tempo
+void pausar(int milissegundos) {
+    Sleep(milissegundos);
+}
+ void changeColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+} 
+
+void fim(){
+	system("cls");
+}
+//Função para o funcionamento do carregar
+void carregar(){
+	 cout << "C";
+    pausar(120);
+    cout << "A";
+    pausar(120);
+    cout << "R";
+    pausar(120);
+    cout << "R";
+    pausar(120);
+    cout << "E";
+    pausar(120);
+    cout << "G";
+    pausar(120);
+    cout << "A";
+    pausar(120);
+    cout << "N";
+    pausar(120);
+    cout << "D";
+    pausar(120);
+    cout << "O";
+    pausar(120);
+system("cls");
+    cout << "CARREGANDO";
+    pausar(120);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+system("cls");
+	cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls");
+cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls");  
+  	cout << "CARREGANDO";
+	cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500);
+    cout << ".";
+    pausar(500); 
+    system("cls"); 
+}
+
+int main() {
+	setlocale (LC_ALL,"portuguese");
+carregar();
+//Tutorial
+/*pausar(120);
+cout << "B";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << "m";
+pausar(120);
+cout << "-";
+pausar(120);
+cout << "v";
+pausar(120);
+cout << "i";
+pausar(120);
+cout << "n";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "a";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "j";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "g";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "C";
+pausar(120);
+cout << "a";
+pausar(120);
+cout << "r";
+pausar(120);
+cout << "n";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << "i";
+pausar(120);
+cout << "r";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "e";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "d";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << " ";
+pausar(120);
+cout << "L";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "b";
+pausar(120);
+cout << "o";
+pausar(120);
+cout << "!";
+pausar(120);
+cout << "\n";
+pausar(120);
+
+    
+
+    
+
+      
+cout << "          V";
+pausar(200);
+cout << "   A";
+pausar(200);
+cout << "   M";
+pausar(200);
+cout << "   O";
+pausar(200);
+cout << "   S";
+pausar(200);
+cout << " ";
+pausar(200);
+cout << "   C";
+pausar(200);
+cout << "   O";
+pausar(200);
+cout << "   M";
+pausar(200);
+cout << "   E";
+pausar(200);
+cout << "   Ç";
+pausar(200);
+cout << "   A";
+pausar(200);
+cout << "   R";
+pausar(200);
+cout << "\n";
+pausar(200);
+
+    cout << "O ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "ê";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e"; int Fazendeiro = 0; // 0 lado em que se inciia, 1 lado em que o fazendeiro vai
+    int ovelha = 1, lobo = 2, alface = 3;
+pausar(70);
+cout << "m";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "é";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "ó";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << ".\n";
+pausar(70);
+
+cout << "\nO ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << ". ";
+pausar(70);
+cout << "V";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "ê";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "à";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "g";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << ": ";
+pausar(70);
+cout << "\n";
+
+
+cout << "\nO ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "\n";
+pausar(70);
+
+cout << "\nA ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "f";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "z";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "n";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "\n";
+pausar(70);
+
+cout << "\nE";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "í";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "q";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "j";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "v";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "p";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "t";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "m";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "e";
+pausar(70);
+cout << "g";
+pausar(70);
+cout << "u";
+pausar(70);
+cout << "i";
+pausar(70);
+cout << "d";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << ", ";
+pausar(70);
+cout << "E";
+pausar(70);
+cout << "s";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << "l";
+pausar(70);
+cout << "h";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << " ";
+pausar(70);
+cout << "b";
+pausar(70);
+cout << "a";
+pausar(70);
+cout << "r";
+pausar(70);
+cout << "c";
+pausar(70);
+cout << "o";
+pausar(70);
+cout << ".";
+pausar(70);
+cout << "\"";
+pausar(70);
+cout << "\n";
+cout << "\n";
+cout << "\n";
+
+*/
+//JOGO
+// Inicialização das variáveis
+bool jogoFinalizado = false;
+// variáveis dentro do barco
+int ovelhaNoBarco = 0;
+int loboNoBarco = 0;
+int repolhoNoBarco = 0;
+// variáveis lado inicial
+int Ovelinha = 0; 
+int lobinho = 0;   
+int repolhinho = 0;
+int ladoInicial =0;
+//int Ovelinha = 3; 3 lado direito
+//int lobinho = 3;lado direito   
+//int repolhinho = 3;lado direito
+//int ladoInicial =3;lado direito
+// variáveis
+int menu1=1;
+int menu2=2;
+int ovelha1 = 0;
+int lobo2= 0;
+int repolho3 = 0;
+string (mover);
+string (palavra);
+int Wylker1 =10;
+int Wylker2 =10;
+int Wylker3 =10;
+int Wylker4 =10;
+int Wylker5 =10;
+int lados;
+int escolha;
+
+    while (true) {
+        cout << "Bem-vindo ao MENU!\n";
+        cout << "Escolha uma opcao:\n";
+        cout << "1. Jogar\n";
+        cout << "2. Configuracoes\n";
+        cout << "3. Sair\n";
+        cin >> escolha;
+
+        switch (escolha) {
+            case 1:
+            	system("cls");
+            while (!jogoFinalizado) {
+     //lado esquerdo   
+	 cout<<"\n"; 
+	 cout<<"\n"; 
+	 cout<<"\n"; 
+	 cout << "Estado atual dos lados do rio:\n"; 
+	 cout<<"\n";      
+     if (ovelha1 == 0){
+     cout << "Ovelha: " << "No lado inicial" << endl;
+	 }
+     if (lobo2 == 0){
+     cout << "Lobo: " <<"No lado inicial" << endl;
+	 }
+     if (repolho3 == 0){
+     cout  << "Repolho: " <<"No lado inicial" << endl;
+     }   
+     //rio  
+     if (ovelha1 == 2){
+     cout << "Ovelha: " << "No barco" << endl;
+	 }
+     if (lobo2 == 2){
+     cout << "Lobo: " <<"No barco" << endl;
+	 }
+     if (repolho3 == 2){
+     cout << "Repolho: " <<"No barco" << endl;
+     }
+     //lado direitove    
+     if (ovelha1 == 3){
+     cout << "Ovelha: " << "No lado direito" << endl;
+	 }
+     if (lobo2 == 3){
+     cout << "Lobo: " <<"No lado direito" << endl;
+	 }
+     if (repolho3 == 3){
+     cout << "Repolho: " <<"No lado direito" << endl;
+     cout<<"\n"; 
+     cout<<"\n"; 
+    }
+
+
+ 
+ 
+  cout << "Para mover os objetos digite: Mover\n"; 
+  cin>> mover;  
+   if (mover == "mover"){
+	cout << "Digite a palavra em aspas para coloca-la no barco:\n"; 
+    cout << "'Ovelha' ''Lobo' 'Repolho'\n"; 
+    cin>> palavra;  
+      if (palavra == "ovelha"){
+  	      cout << "Ovelha: " << "está no barco" << endl;
+	      ovelha1=2;
+	  }
+         if (palavra == "lobo"){
+	      cout << "Lobo: " <<"está no barco" << endl;
+	      lobo2=2;
+		 }
+         if (palavra == "repolho"){
+	       cout <<"Repolho: " <<"está no barco" << endl;
+	      repolho3=2;
+		 }
+   }
+  cout << "Para mover de um lado para o outro Digite '1' para Direita ou '2' para Esquerda:\n";   
+  cin>>lados;
+         if (lados==1&&ovelha1==2){
+	      ovelha1=ovelha1+1;
+	      cout<<"Agora Ovelha está no lado Direito do RIO\n";
+          }
+          if (lados==1&&lobo2==2){
+	      lobo2=lobo2+1;
+	      cout<<"Agora Lobo está no lado Direito do RIO\n";
+          }
+          if (lados==1&&repolho3==2){
+	      repolho3=repolho3+1;
+	      cout<<"Agora Repolho está no lado Direito do RIO\n";
+         
+		  }
+		  if (lobo2==3&&ovelha1==3){
+			  cout<<"BaH!! O lobo encheu a barriga, vamos tentar novamente.";
+			  
+		  }
+		  if (repolho3==3&&ovelha1==3){
+			  cout<<"BaH!! A ovelha encheu a barriga, vamos tentar novamente.";
+			  
+		  }
+			
+			
+			
+   if (lados==2&&ovelha1==2){
+	      ovelha1-=2;
+	      cout<<"Agora Ovelha está no lado Esquerdo do RIO\n";
+   }
+          if (lados==2&&lobo2==2){
+	      lobo2-=2;
+	      cout<<"Agora Lobo está no lado Esquerdo do RIO\n";
+          }
+          if (lados==2 &&repolho3==2){
+	      repolho3-=2;
+	      cout<<"Agora Repolho está no lado Esquerdo do RIO\n";
+           }
+   
+ 
+  // Verifica se o jogo foi finalizado com sucesso
+   if (ovelha1 == 3&&lobo2 == 3&&repolho3 == 3) {
+                cout << "Parabéns! Você finalizou o jogo com sucesso.\n";
+                jogoFinalizado = true;
+                _exit(0);
+                break;
+}   
+			}
+            case 2:
+                while (true) {
+                	system("cls");
+                    cout << "Escolha uma cor:\n";
+                    cout << "1. Azul\n";
+                    cout << "2. Verde\n";
+                    cout << "3. Vermelho\n";
+                    cout << "4. Amarelo\n";
+                    cin >> escolha;
+
+
+	switch (escolha) {
+                        case 1:
+                            changeColor(9);
+                            system("cls");
+                            break;
+                        case 2:
+                            changeColor(10);
+                            system("cls");
+                            break;
+                        case 3:
+                            changeColor(12);
+                            system("cls");
+                            break;
+                        case 4:
+                            changeColor(14); 
+                            system("cls");
+                            break;
+                        default:
+                            cout << "Opcao invalida. Tente novamente.\n";
+                            break;
+                    }
+
+                    if (escolha >= 1 && escolha <= 4) {
+                        break;
+                    }
+                }
+                break;
+
+            case 3:
+                cout << "Obrigado por jogar! Até a proxima!\n";
+                return 0;
+
+            default:
+                cout << "Opcao invalida. Tente novamente.\n";
+                system("cls");
+                break;
+        }
+    }
+
+    return 0;
+}
+			
+
+  
+
+
+
+
+
