@@ -1,0 +1,127 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+
+void showInstructions() {
+    std::cout << "Bem vindo ao jogo de quebra-cabeça!\n";
+    std::cout << "Era uma vez um camponês que foi ao mercado e comprou um lobo, um carneiro e uma couve.\n";
+    std::cout << "No caminho para casa, o fazendeiro chegou à margem de um rio e arrendou um barco.\n";
+    std::cout << "Mas, na travessia do rio por barco, o agricultor poderia levar apenas a si mesmo e uma única de suas compras — o lobo, o carneiro, ou a alface.\n";
+    std::cout << "Se fossem deixados sozinhos em uma mesma margem, o lobo comeria o carneiro e o carneiro comeria a couve.\n";
+    std::cout << "O objetivo é ajudar o camponês a transportar todas as suas compras para o outro lado do rio.\n";
+    std::cout << "A estratégia correta para isso é:\n";
+    std::cout << "1. O camponês leva primeiro a ovelha para o outro lado e a deixa lá.\n";
+    std::cout << "2. Ele volta sozinho para o lado inicial.\n";
+    std::cout << "3. Agora, o camponês leva o lobo para o outro lado e deixa o lobo lá.\n";
+    std::cout << "4. Ele retorna com a ovelha para o lado inicial.\n";
+    std::cout << "5. O camponês deixa a ovelha e pega a couve, levando-a para o outro lado.\n";
+    std::cout << "6. Por fim, ele volta sozinho para o lado inicial e traz a ovelha.\n";
+}
+
+void stepOne() {
+    int choice;
+    std::cout << "\nPrimeira etapa:\n";
+    std::cout << "1. Leva a ovelha e deixa o lobo com a couve\n";
+    std::cout << "2. Leva o lobo e deixa a ovelha com a couve\n";
+    std::cout << "3. Leva a couve e deixa a ovelha com o lobo\n";
+    std::cout << "Escolha uma opção: ";
+    std::cin >> choice;
+
+    if (choice == 1) {
+        std::cout << "Correto! Vamos para a próxima etapa.\n";
+    } else {
+        std::cout << "Desculpe, essa não é a opção correta. Por favor, tente novamente.\n";
+        system("clear");
+        showInstructions();
+    }
+}
+
+void stepTwo() {
+    int choice;
+    std::cout << "\nSegunda etapa:\n";
+    std::cout << "1. Ele volta para casa sem nenhum dos dois\n";
+    std::cout << "2. Ele volta para buscar a ovelha\n";
+    std::cout << "3. Ele volta para buscar o lobo\n";
+    std::cout << "Escolha uma opção: ";
+    std::cin >> choice;
+
+    if (choice == 3) {
+        std::cout << "Correto! Vamos para a próxima etapa.\n";
+    } else {
+        std::cout << "Desculpe, essa não é a opção correta. Por favor, tente novamente.\n";
+        system("clear");
+        showInstructions();
+    }
+}
+
+void stepThree() {
+    int choice;
+    std::cout << "\nTerceira etapa:\n";
+    std::cout << "1. O camponês deixa o lobo e fica por lá mesmo (ele não gosta de couve)\n";
+    std::cout << "2. O camponês deixa o lobo junto a ovelha e volta sozinho\n";
+    std::cout << "3. O camponês deixao lobo e leva de volta a ovelha\n";
+    std::cout << "Escolha uma opção: ";
+    std::cin >> choice;
+
+    if (choice == 3) {
+        std::cout << "Correto! Vamos para a próxima etapa.\n";
+    } else {
+        std::cout << "Desculpe, essa não é a opção correta. Por favor, tente novamente.\n";
+        system("clear");
+        showInstructions();
+    }
+}
+
+void stepFour() {
+    int choice;
+    std::cout << "\nQuarta etapa:\n";
+    std::cout << "1. Ele pega e vai embora porque já cansou\n";
+    std::cout << "2. Ele deixa a ovelha e volta sozinho\n";
+    std::cout << "3. Ele deixa a ovelha e leva a couve\n";
+    std::cout << "Escolha uma opção: ";
+    std::cin >> choice;
+
+    if (choice == 3) {
+        std::cout << "Correto! Vamos para a próxima etapa.\n";
+    } else {
+        std::cout << "Desculpe, essa não é a opção correta. Por favor, tente novamente.\n";
+        system("clear");
+        showInstructions();
+    }
+}
+
+void stepFive() {
+    int choice;
+    std::cout << "\nQuinta etapa:\n";
+    std::cout << "1. Ele só escolhe a b\n";
+    std::cout << "2. Por fim, volta e leva a couve\n";
+    std::cout << "3. Por fim, ele deixa a couve e fica com o lobo e a ovelha\n";
+    std::cout << "Escolha uma opção: ";
+    std::cin >> choice;
+
+    if (choice == 2) {
+        std::cout << "Parabéns! Você achou a solução correta.\n";
+        std::cout << "A estratégia era:\n";
+        std::cout << "1. O camponês leva primeiro a ovelha para o outro lado e a deixa lá.\n";
+        std::cout << "2. Ele volta sozinho para o lado inicial.\n";
+        std::cout << "3. Agora, o camponês leva o lobo para o outro lado e deixa o lobo lá.\n";
+        std::cout << "4. Ele retorna com a ovelha para o lado inicial.\n";
+        std::cout << "5. O camponês deixa a ovelha e pega a couve, levando-a para o outro lado.\n";
+        std::cout << "6. Por fim, ele volta sozinho para o lado inicial e traz a ovelha.\n";
+    } else {
+        std::cout << "Desculpe, essa não é a opção correta. Tente novamente.\n";
+        system("clear");
+        showInstructions();
+    }
+}
+
+int main() {
+    showInstructions();
+    stepOne();
+    stepTwo();
+    stepThree();
+    stepFour();
+    stepFive();
+
+    return 0;
+}
