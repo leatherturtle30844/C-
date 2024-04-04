@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+void showInstructions() {
+    printf("Bem vindo ao jogo de quebra-cabeça!\n");
+    printf("Era uma vez um camponês que foi ao mercado e comprou um lobo, um carneiro e uma couve.\n");
+    printf("No caminho para casa, o fazendeiro chegou à margem de um rio e arrendou um barco.\n");
+    printf("Mas, na travessia do rio por barco, o agricultor poderia levar apenas a si mesmo e uma única de suas compras — o lobo, o carneiro, ou a alface.\n");
+    printf("Se fossem deixados sozinhos em uma mesma margem, o lobo comeria o carneiro e o carneiro comeria a couve.\n");
+    printf("O objetivo é ajudar o camponês a transportar todas as suas compras para o outro lado do rio.\n");
+    printf("A estratégia correta para isso é:\n");
+    printf("1. O camponês leva primeiro a ovelha para o outro lado e a deixa lá.\n");
+    printf("2. Ele volta sozinho para o lado inicial.\n");
+    printf("3. Agora, o camponês leva o lobo para o outro lado e deixa o lobo lá.\n");
+    printf("4. Ele retorna com a ovelha para o lado inicial.\n");
+    printf("5. O camponês deixa a ovelha e pega a couve, levando-a para o outro lado.\n");
+    printf("6. Por fim, ele volta sozinho para o lado inicial e traz a ovelha.\n");
+}
+
+void nextStep() {
+    int choice;
+    printf("\nEscolha uma opção: ");
+    scanf("%d", &choice);
+
+    if (choice != 1) {
+        printf("Desculpe, essa não é a opção correta. Por favor, tente novamente.\n");
+        system("clear");
+        showInstructions();
+    }
+}
+
+int main() {
+    system("clear");
+    showInstructions();
+
+    printf("Primeira etapa:\n");
+    printf("1. Leva a ovelha e deixa o lobo com a couve\n");
+    printf("2. Leva o lobo e deixa a ovelha com a couve\n");
+    printf("3. Leva a couve e deixa a ovelha com o lobo\n");
+    nextStep();
+
+    printf("Segunda etapa:\n");
+    printf("1. Ele volta para casa sem nenhum dos dois\n");
+    printf("2. Ele volta para buscar a ovelha\n");
+    printf("3. Ele volta para buscar o lobo\n");
+    nextStep();
+
+    printf("Terceira etapa:\n");
+    printf("1. O camponês deixa o lobo e fica por lá mesmo (ele não gosta de couve)\n");
+    printf("2. O camponês deixa o lobo junto a ovelha e volta sozinho\n");
+    printf("3. O camponês deixa o lobo e leva de volta a ovelha\n");
+    nextStep();
+
+    printf("Quarta etapa:\n");
+    printf("1. Ele pega e vai embora porque já cansou\n");
+    printf("2. Ele deixa a ovelha e volta sozinho\n");
+    printf("3. Ele deixa a ovelha e leva a couve\n");
+    nextStep();
+
+    printf("Quinta etapa:\n");
+    printf("1. Ele só escolhe a b\n");
+    printf("2. Por fim, volta e leva a couve\n");
+    printf("3. Por fim, ele deixa a couve e fica com o lobo e a ovelha\n");
+    if (choice != 2) {
+        printf("Desculpe, essa não é aopção correta. Tente novamente.\n");
+        system("clear");
+        showInstructions();
+    } else {
+        printf("Parabéns! Você achou a solução correta.\n");
+        printf("A estratégia era:\n");
+        printf("1. O camponês leva primeiro a ovelha para o outro lado e a deixa lá.\n");
+        printf("2. Ele volta sozinho para o lado inicial.\n");
+        printf("3. Agora, o camponês leva o lobo para o outro lado e deixa o lobo lá.\n");
+        printf("4. Ele retorna com a ovelha para o lado inicial.\n");
+        printf("5. O camponês deixa a ovelha e pega a couve, levando-a para o outro lado.\n");
+        printf("6. Por fim, ele volta sozinho para o lado inicial e traz a ovelha.\n");
+    }
+
+    return 0;
+}
