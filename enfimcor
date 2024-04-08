@@ -1480,6 +1480,7 @@ while (true) {
         cout << "\nEtapa " << etapa << ":\n";
         switch (etapa) {
             case 1:
+	
 	cout<<setw(50)<<"|              |\033[34m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m|              |\n";
 	cout<<setw(50)<<"|              |\033[34m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m|              |\n";
 	cout<<setw(50)<<"|              |\033[34m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m|              |\n";
@@ -1561,6 +1562,7 @@ while (true) {
                 }
                 if (escolha==3){
                 	system("cls");
+                	anima4();
 
 			}
                 break;
@@ -1579,6 +1581,7 @@ while (true) {
      
                 }
                 if (escolha==1){
+                	system("cls");
                 	anima5();
 					  cout << "\nParabéns! Você descobriu a estratégia correta.\n";
                       cout << "A estratégia era:\n";
@@ -1603,7 +1606,7 @@ while (true) {
         case 2:
             while (true) {
             	system("cls");
-                cout << "Escolha uma cor:\n";
+                cout << "Escolha uma cor para o menu, após digite o número respetivo da cor aperte o ENTER:\n";
                 cout << "1. Azul\n";
                 cout << "2. Verde\n";
                 cout << "3. Vermelho\n";
@@ -1652,5 +1655,4 @@ switch (escolha) {
 
 return 0;
 }
-
 
